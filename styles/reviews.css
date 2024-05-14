@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-item {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.hero-item p {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hero-item h1 {
+  color: #fff;
+  font-size: 2.25rem;
+}
+
+/*reviews*/
+
+.testimonials {
+  margin-top: 2rem;
+  margin-bottom: 8.2rem;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #000000;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card__img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 0.6rem;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.card__header h3 {
+  font-size: 1rem;
+}
+
+.card__header span {
+  font-size: 0.9rem;
+  color: #4a4949;
+}
+
+.card__review {
+  font-size: 0.9rem;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2rem;
+  height: 70.6vh;
+}
+
+.login {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.email input {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  outline-color: rgb(39, 39, 39);
+  margin-bottom: 1.5rem;
+}
+
+.password input {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  outline-color: rgb(39, 39, 39);
+  margin-bottom: 1.5rem;
+}
+
+.login-btn {
+  cursor: pointer;
+  padding: 0.73rem 1.5rem;
+  width: 100%;
+  font-size: 1rem;
+  border-style: none;
+  background-color: #1e95a6;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #167280;
+}
+
+footer {
+  background-color: #f2545b;
+  padding: 20px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-items a {
+  color: #fff;
+}
+
+.footer-items img {
+  height: 20px;
+  width: 20px;
+}
+@media (max-width: 800px) {
+  .footer-items {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-items img {
+    margin-bottom: 0.5rem;
+  }
+  .footer-items a {
+    margin-bottom: 0.4rem;
+  }
+  .form-container {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    margin: 8px 5px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .input-nav {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 524px) {
+  .input-nav {
+    width: 90%;
+  }
+}
